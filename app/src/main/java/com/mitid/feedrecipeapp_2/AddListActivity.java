@@ -7,6 +7,8 @@
 package com.mitid.feedrecipeapp_2;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +18,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,6 +37,9 @@ public class AddListActivity extends AppCompatActivity {
     static ArrayList<String> items;
     static Context context;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +48,23 @@ public class AddListActivity extends AppCompatActivity {
         input = findViewById(R.id.input);
         enter = findViewById(R.id.add);
         context = getApplicationContext();
+
+
+
+
+
+        ExtendedFloatingActionButton fab = (ExtendedFloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AddListActivity.this, recipes.class));
+
+            }
+
+
+
+        });
+
 
         // add hardcoded items to grocery list
         items = new ArrayList<>();
@@ -85,7 +110,19 @@ public class AddListActivity extends AppCompatActivity {
             }
         });
         loadContent();
+
+
+
+
+
+
+
+
+
     }
+
+
+
 
     // function to read grocery list from file and load it into ListView
     public void loadContent() {
@@ -150,4 +187,7 @@ public class AddListActivity extends AppCompatActivity {
         t = Toast.makeText(context, s, Toast.LENGTH_SHORT);
         t.show();
     }
+
+
+
 }

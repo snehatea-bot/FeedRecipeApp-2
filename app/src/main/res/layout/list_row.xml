@@ -20,7 +20,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="28sp"
         android:textColor="#000"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/copy"

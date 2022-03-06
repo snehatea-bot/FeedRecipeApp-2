@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AddListActivity">
 
     <RelativeLayout
@@ -17,34 +18,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="What’s in your kitchen?" />
+            android:fontFamily="@font/raleway_black"
+            android:paddingHorizontal="16dp"
+            android:text="What’s in your kitchen?"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
-            android:text="Just enter the items you have in your kitchen and we will cook-you-up a recipe!" />
+            android:layout_marginTop="70dp"
+
+            android:fontFamily="@font/raleway_medium"
+            android:paddingHorizontal="16dp"
+            android:text="Just enter the items you have in your kitchen and we will cook-you-up a recipe!"
+            android:textSize="16dp" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp">
+        android:layout_marginTop="140dp">
 
         <EditText
             android:id="@+id/input"
             android:layout_width="320dp"
             android:layout_height="48dp"
-            android:background="@drawable/custome_input"
             android:layout_marginLeft="16dp"
+            android:background="@drawable/custome_input"
             android:ems="10"
-            android:paddingLeft="20dp"
+            android:fontFamily="@font/raleway_regular"
             android:hint="Add Ingredients..."
-            android:minHeight="48dp"/>
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:textSize="16dp" />
             <!--android:layout_centerInParent="true"-->
 
 
@@ -53,16 +63,46 @@
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="18dp"
             android:layout_toRightOf="@+id/input"
             android:src="@drawable/add_item" />
 
     </RelativeLayout>
+
     <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/list"
         android:layout_below="@+id/header"
-        />
+        android:layout_marginTop="40dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fontFamily="@font/raleway_regular" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="110dp"
+
+        android:layout_marginBottom="44dp"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/raleway_medium"
+        android:text="  Find Recipe"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconGravity="start|end|textStart"
+        app:iconSize="20dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
 
 </RelativeLayout>

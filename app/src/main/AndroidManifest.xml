@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FeedRecipeApp2">
-        <activity android:name=".AddListActivity"
+        <activity
+            android:name=".recipes"
+            android:exported="false" />
+        <!--<activity
+            android:name=".add_list2"
+            android:exported="false"
+            android:label="@string/title_activity_add_list2"
+            android:theme="@style/Theme.FeedRecipeApp2.NoActionBar" />-->
+        <activity
+            android:name=".AddListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
