@@ -10,21 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FeedRecipeApp2">
         <activity
+            android:name=".HomePage"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
             android:name=".recipes"
             android:exported="false" />
-        <!--<activity
+        <!--
+<activity
             android:name=".add_list2"
             android:exported="false"
             android:label="@string/title_activity_add_list2"
-            android:theme="@style/Theme.FeedRecipeApp2.NoActionBar" />-->
+            android:theme="@style/Theme.FeedRecipeApp2.NoActionBar" />
+        -->
         <activity
             android:name=".AddListActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data

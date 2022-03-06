@@ -7,10 +7,17 @@
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/drawable/copy.xml" value="0.131" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/drawable/custome_input.xml" value="0.172" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/drawable/remove2.xml" value="0.184" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/drawable/tab_indicator.xml" value="0.184" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/activity_add_list.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/activity_home_page.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/activity_recipes.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/add_list.xml" value="0.22" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/fragment_all.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/fragment_non_veg.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/fragment_one.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/fragment_veg.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/fragment_vegan.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Sneha/Documents/UG3/Sem 2/android/FeedRecipeApp22/app/src/main/res/layout/list_row.xml" value="0.16666666666666666" />
       </map>
     </option>
