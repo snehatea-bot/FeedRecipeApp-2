@@ -20,6 +20,13 @@ public class HomePage extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
     HomeAdapter adapter;
+    private int[] tabIcons = {
+            R.drawable.all,
+            R.drawable.nonveg,
+            R.drawable.veg,
+            R.drawable.vegan
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +34,17 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         //Assign Variable
-        tabLayout=findViewById(R.id.tab_layout);
+        tabLayout = findViewById(R.id.tab_layout);
         viewPager = findViewById(R.id.view_pager);
 
+
         //Initialize adapter
-        adapter=new HomeAdapter(getSupportFragmentManager());
+        adapter = new HomeAdapter(getSupportFragmentManager());
         //Add fragments
-        adapter.AddFragment(new Veg(),"Veg");
+        adapter.AddFragment(new Veg(), "Veg");
         adapter.AddFragment(new nonVeg(), "Non-Veg");
         adapter.AddFragment(new Vegan(), "Vegan");
-        adapter.AddFragment(new All()," All");
+        adapter.AddFragment(new All(), " All");
 
         //set adapter
 
@@ -44,7 +52,21 @@ public class HomePage extends AppCompatActivity {
 
         //connect tablayout with view pager
         tabLayout.setupWithViewPager(viewPager);
+
+
+
+
+        setupTabIcons();
+
+}
+    private void setupTabIcons() {
+
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
     }
+
 
     private class HomeAdapter extends FragmentPagerAdapter {
         //Initialise arraylist
